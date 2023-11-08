@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Laps } from "@/components/laps";
+import { Mii } from "@/components/mii";
+import { Character } from "@/components/character";
+---
+
+<Layout>
+  <div class="container mt-24 flex gap-5 justify-center">
+    <Laps client:only /><Character client:only /><Mii client:only />
+  </div>
+</Layout>
